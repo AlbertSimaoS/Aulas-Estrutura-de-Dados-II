@@ -4,7 +4,6 @@
 
 int main()
 {
-    //Busca Linear
     int vetor[] = {120, 150, 110, 130, 100, 160, 140, 190, 180, 170};
     int i;
 
