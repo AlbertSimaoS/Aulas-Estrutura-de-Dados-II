@@ -1,0 +1,17 @@
+int i, j, k;
+for(i = 0; i < n; i++)
+{
+    for(j = 0; j < n; j++)
+    {
+        r[i][j] = 0;
+        for(k = 0; k < n; k++)
+        {
+            r[i][j] += a[i][k] * b[k][j];
+        }
+    }
+}
+
+// Cálculo da Complexidade: 
+// laço 2: 5n + 2
+// laço 1: 3n + 2 + n(laço 2)
+// => 5n^2 + 5n + 2
