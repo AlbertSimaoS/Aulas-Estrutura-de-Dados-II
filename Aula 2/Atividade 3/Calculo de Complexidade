@@ -1,0 +1,13 @@
+int i, j, s;
+s = 0;
+for(i = 1; i < n - 1; i++)
+{
+    for(j = 1; j < 2 * n; j++)
+    {
+        s = s + 1;
+    }
+}
+// Cálculo da Complexidade:
+// laço 2: 4(n*2) + 2
+// laço 1: 2(n-1) + 2 + (n-1) * (laço 2)
+// =>8n^2 - 4n - 2
